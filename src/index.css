@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Founders Grotesk XCond-Bold';
+  src: url('./assets/fonts/FoundersGroteskXCond-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+*{box-sizing: border-box;}
+
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('./assets/fonts/NeueMontreal-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  height: 100%;
+  overflow-y: auto;
+}
+
+body {
+  scrollbar-width: thin;              
+  -ms-overflow-style: auto;         
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+@media screen and (min-width: 1024px) {
+  html, body {
+    scrollbar-width: none !important;       
+    -ms-overflow-style: none !important;  
+  }
+
+  body::-webkit-scrollbar,
+  html::-webkit-scrollbar {
+    width: 0px !important;
+    height: 0px !important;
+    background: transparent !important;
+  }
+}
+
+.scrollable-area::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scrollable-area::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollable-area::-webkit-scrollbar-thumb {
+  background-color: #2c2b2b;
+  border-radius: 20px;
+  border: 2px solid transparent;
+}
+
+.scrollable-area {
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+
