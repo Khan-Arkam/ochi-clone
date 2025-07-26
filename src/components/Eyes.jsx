@@ -63,7 +63,7 @@ function Eyes() {
       <div
         data-scroll
         data-scroll-speed="-.7"
-        className='relative w-full h-full bg-cover bg-center bg-[url("./eyebg.jpg")]'
+        className='relative w-full h-full bg-cover bg-center bg-[url("/eyebg.jpg")]'
       >
         <div className="absolute flex gap-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <div
